@@ -2,7 +2,7 @@
     --primary-color: hsl(185, 75%, 39%);
     --bold-font-color: hsl(229, 23%, 23%);
     --normal-color: hsl(227, 10%, 46%);
-    --border-color: hsl(0, 0%, 59%);
+    --border-color: hsl(0, 0%, 83%);
 }
 
 * {
@@ -42,7 +42,7 @@ body::before {
     border-radius: 15px;
     text-align: center;
     background: white url(./images/bg-pattern-card.svg) no-repeat;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 .profile {
@@ -67,7 +67,9 @@ p,
 }
 
 .details > div > .stats + p {
-    font-size: 14px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 10px;
 }
 
 .details > div > .stats {
@@ -81,12 +83,12 @@ p,
 .name,
 .stats {
     font-weight: 700;
-    font-size: 18px;
+    /* font-size: 18px; */
     color: var(--bold-font-color);
 }
 
 .details {
-    border-top: 1px solid var(--border-color);
+    border-top: 0.5px solid var(--border-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
