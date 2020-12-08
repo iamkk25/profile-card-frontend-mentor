@@ -1,0 +1,108 @@
+:root {
+    --primary-color: hsl(185, 75%, 39%);
+    --bold-font-color: hsl(229, 23%, 23%);
+    --normal-color: hsl(227, 10%, 46%);
+    --border-color: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: var(--primary-color) url(./images/bg-pattern-top.svg) no-repeat;
+    /* background-position: -172px -628px; */
+    background-position: -34% 263%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(./images/bg-pattern-bottom.svg) no-repeat;
+    /* background-position: 690px 314px; */
+    background-position: 135% -171%;
+}
+
+.card {
+    width: 350px;
+    /* height: 100%; */
+    border-radius: 15px;
+    text-align: center;
+    background: white url(./images/bg-pattern-card.svg) no-repeat;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.profile > .name {
+    margin-bottom: 0.5rem;
+}
+
+.profile__victor {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 3.3rem 0 1rem;
+}
+
+p,
+.age {
+    font-weight: 400;
+    color: var(--normal-color);
+}
+
+.details > div > .stats + p {
+    font-size: 14px;
+}
+
+.details > div > .stats {
+    margin-bottom: 5px;
+}
+
+.age {
+    margin-left: 5px;
+}
+
+.name,
+.stats {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bold-font-color);
+}
+
+.details {
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0.7rem;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-position: 123% 230%;
+    }
+
+    body::before {
+        background-position: -23% -107%;
+    }
+
+    .card {
+        width: 85%;
+    }
+}
