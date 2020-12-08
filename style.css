@@ -47,11 +47,11 @@ body::before {
 
 .profile {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 0 1.5rem;
 }
 
 .profile > .name {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .profile__victor {
